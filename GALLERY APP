@@ -1,0 +1,75 @@
+npm i express
+npm i multer
+npm
+npm i mongoose
+npm i --save-dev nodemon
+i express-handlebars
+npm i mongoose
+npm i --save-dev nodemon
+const express = require("express");
+
+const app = express();
+
+app.get("/", (req, res) => {
+
+    res.send("hello world")
+});
+
+app.listen(5000, () => {
+  console.log("App is listening on Port 5000");
+});
+<!DOCTYPE html>
+<html>
+
+<head>
+  <title>Image Gallery in Node.js Express Using Multer and MongoDB</title>
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" />
+</head>
+
+<body>
+  {{{body}}}
+</body>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+
+</html>
+<div class="container">
+    <br>
+    <h1 class="text-center">
+        Image Gallery
+    </h1>
+    <br>
+    <form action="/" method="POST" enctype="multipart/form-data">
+
+        <div class="form-group">
+            <label for="Select Image:">Select Image:</label>
+            <input type="file" name="image" class="form-control" id="">
+        </div>
+        <br>
+        <div class="form-group">
+            <button class="btn btn-block btn-danger">
+                Upload Image
+            </button>
+        </div>
+    </form>
+</div>
+const express = require("express");
+
+var exphbs = require("express-handlebars");
+
+
+const app = express();
+
+app.engine("handlebars", exphbs());
+app.set("view engine", "handlebars");
+
+
+app.get("/", (req, res) => {
+
+    res.render("home")
+});
+
+
+app.listen(5000, () => {
+  console.log("App is listening on Port 5000");
+});
